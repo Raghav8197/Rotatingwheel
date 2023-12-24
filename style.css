@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .wheel-container {
+    width: 500px; 
+    height: 500px; 
+    position: relative;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .section {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .section.red {
+    background-color: red;
+    transform: rotate(0deg);
+  }
+  
+  .section.green {
+    background-color: green;
+    transform: rotate(120deg);
+  }
+  
+  .section.yellow {
+    background-color: yellow;
+    transform: rotate(240deg);
+  }
+  
+  .wheel-container:hover .wheel {
+    animation-name: reverse-rotate;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes reverse-rotate {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
