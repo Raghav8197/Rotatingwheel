@@ -1,3 +1,33 @@
-repository: Raghav8197/Rotatingwheel
+title: Rotating Wheel
+description: Rotating an wheel
+url: "https://Raghav8197.github.io/rotatingwheel"
+baseurl: "/rotatingwheel"
+repository: Raghav8197/rotatingwheel
 
-theme: jekyll-theme-primer
+theme: jekyll-theme-minima
+
+# Uncomment the following lines if you're using a remote theme
+# remote_theme: "author/theme-name"
+
+markdown: kramdown
+
+# Additional configuration options go here
+
+collections:
+  # Example collection
+  mycollection:
+    output: true
+
+plugins:
+ jekyll-feed
+ jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+
+# Permalink structure (customize as needed)
+permalink: /2023/12/25/my-first-post/.
+
+# Customize other settings as per your requirements
