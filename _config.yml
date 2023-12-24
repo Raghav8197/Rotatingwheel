@@ -6,8 +6,7 @@ repository: Raghav8197/rotatingwheel
 
 theme: jekyll-theme-minima
 
-# Uncomment the following lines if you're using a remote theme
-# remote_theme: "author/theme-name"
+
 
 markdown: kramdown
 
